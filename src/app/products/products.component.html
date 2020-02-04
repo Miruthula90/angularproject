@@ -1,0 +1,32 @@
+
+
+<div class="row">
+
+        <div class="col-md-12" >
+
+        
+        <table class="table table-striped" >
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">ProductID</th>
+                    <th scope="col">ProductNo</th>
+                    <th scope="col">ProductName</th>
+                    <th scope="col">Price</th>
+                    <th scope="col"><button [routerLink]="['/holder/createproduct']">Create Product</button></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let product of products">
+                    
+                    <td>{{product.productid}}</td>
+                    <td>{{product.productno}}</td>
+                    <td>{{product.productname}}</td>
+                    <td>{{product.price}}</td>
+                    <td><button>Edit Product</button></td>
+                  </tr>                              
+                </tbody>
+              </table>
+            </div>
+            </div>
+            
+

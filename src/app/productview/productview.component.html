@@ -1,0 +1,32 @@
+
+
+<div class="row">
+
+    <div class="col-md-12" >
+
+    
+    <table class="table table-striped" >
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">ProductID</th>
+                <th scope="col">ProductNo</th>
+                <th scope="col">ProductName</th>
+                <th scope="col">Price</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let details of productdetails">
+                
+                <td>{{details.id}}</td>
+                <td>{{details.productName}}</td>
+                <td>{{details.price}}</td>
+                <td><img [src]="details.image"></td>
+                
+              </tr>                              
+            </tbody>
+          </table>
+        </div>
+        </div>
+        
+

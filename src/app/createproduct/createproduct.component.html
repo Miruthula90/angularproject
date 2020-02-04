@@ -1,0 +1,49 @@
+<form [formGroup]="userform" (ngSubmit)="SubmitForm()">
+
+<div class="row">
+    <div class="col-lg-4">
+       <label for="">Username</label>
+       <input type="text" formControlName="name" class="form-control">
+    </div>
+
+    <div class="col-lg-4">
+            <label for="">Age</label>
+            <input type="text" formControlName="age" class="form-control">
+         </div>
+
+         <div class="col-lg-4">
+                <label for="">Email</label>
+                <input type="email" formControlName="email" class="form-control">
+             </div>
+             <div class="col-lg-4">
+                    <label for="">country</label>
+                   <select name="country" formControlName="country" class="form-control">
+                       <option value="US">USA</option>
+                       <option value="IN">INDIA</option>
+                   </select>
+                 </div>
+
+                 <div class="col-lg-4">
+                        <label for="">State</label>
+                       <select name="state" formControlName="state" class="form-control">
+                           <option value="TN">Tamilnadu</option>
+                           <option value="KL">kerala</option>
+                       </select>
+                     </div>
+
+                     <div class="col-lg-4">
+                            <label for="">City</label>
+                           <select name="city" formControlName="city" class="form-control">
+                               <option value="TN">Chennai</option>
+                               <option value="KL">Bangalore</option>
+                           </select>
+                         </div>
+                         
+                         
+</div>
+<div class="row mt-4">
+        <div class="col-lg-4 offset-lg-8">
+                <input type="submit"  value="submit">
+         </div>
+</div>
+</form>
